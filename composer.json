@@ -1,0 +1,41 @@
+{
+  "name": "hylianshield/base32-crockford",
+  "description": "Implementation of Crockford's Base 32 encoder and decoder",
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Jan-Marten de Boer",
+      "email": "johmanx@hylianshield.org"
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "php": "^7.0",
+    "hylianshield/alphabet": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7.5",
+    "hylianshield/validator-base-encoding": "^2.0.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "HylianShield\\Encoding\\": "src"
+    }
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit",
+    "coverage": "php -d zend_extension=xdebug.so ./vendor/bin/phpunit --coverage-text",
+    "coverage-html": [
+      "php -d zend_extension=xdebug.so ./vendor/bin/phpunit --coverage-html ./coverage",
+      "xdg-open ./coverage/index.html"
+    ]
+  },
+  "archive": {
+    "exclude": [
+      "tests",
+      "phpunit.xml"
+    ]
+  }
+}
