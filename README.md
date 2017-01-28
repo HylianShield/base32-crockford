@@ -1,7 +1,7 @@
 # Introduction
 
 This package holds an encoder / decoder that implements
-[Crackford's Base 32](http://www.crockford.com/wrmg/base32.html)
+[Crockford's Base 32](http://www.crockford.com/wrmg/base32.html)
 implementation.
 
 # Installation
