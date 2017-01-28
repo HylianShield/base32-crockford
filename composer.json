@@ -26,6 +26,7 @@
   },
   "scripts": {
     "test": "./vendor/bin/phpunit",
+    "example": "./examples/basic-range.php",
     "coverage": "php -d zend_extension=xdebug.so ./vendor/bin/phpunit --coverage-text",
     "coverage-html": [
       "php -d zend_extension=xdebug.so ./vendor/bin/phpunit --coverage-html ./coverage",
@@ -35,6 +36,7 @@
   "archive": {
     "exclude": [
       "tests",
+      "examples",
       "phpunit.xml"
     ]
   }

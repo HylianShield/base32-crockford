@@ -98,6 +98,14 @@ class Base32CrockfordEncoder
                 static::PADDING_SYMBOL,
                 static::PADDING_DIRECTION
             );
+
+            // Remove leading groups that consist entirely of the padding
+            // character.
+            $encoded = preg_replace(
+                sprintf('/^%s{%d}/', static::PADDING_SYMBOL, static::GROUP_SIZE),
+                '',
+                $encoded
+            );
         }
 
         if ($partitionSize > 0 && $number > 0) {
