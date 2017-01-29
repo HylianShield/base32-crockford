@@ -31,7 +31,7 @@ $decoded = $encoder->decode('0000019S5'); // 1337
 
 # Limitations
 
-While big numbers can be properly encoded, the built-in modify operation for PHP
+While big numbers can be properly encoded, the built-in multiply operation for PHP
 fails to return the correct response if a number gets too high.
 
 This can be solved by using
